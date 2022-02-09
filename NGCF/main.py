@@ -19,6 +19,7 @@ from time import time
 if __name__ == '__main__':
 
     args.device = torch.device('cuda:' + str(args.gpu_id))
+    print(args.device)
 
     plain_adj, norm_adj, mean_adj = data_generator.get_adj_mat()
 
